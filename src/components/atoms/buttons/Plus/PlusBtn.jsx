@@ -1,6 +1,8 @@
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { myContext } from './../../../provider/LotusProvider';
-
+import './plus.scss'
 function PlusBtn({id}) {
     const {  providerCartItems } = React.useContext(myContext);
     const [cartItems, setcartItems] = providerCartItems
@@ -9,8 +11,8 @@ function PlusBtn({id}) {
         setcartItems([...cartItems,id])
     }
     return (
-        <div onClick={addtoCart}>
-            +
+        <div onClick={addtoCart} className="plus-btn">
+          <FontAwesomeIcon icon={faPlus}/>
         </div>
     )
 }

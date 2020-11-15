@@ -1,21 +1,29 @@
-import React from 'react'
-import Skeleton from 'react-loading-skeleton';
+import React, { useEffect, useState } from 'react'
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import PlusBtn from '../../buttons/Plus/PlusBtn';
-import jar from '../../../../Assets/img/JAR.png'
+import jar from '../../../../Assets/img/jar.png'
 import './verticalCard.scss'
 function VerticalCard({ item }) {
+    const [bestSellers, setbestSellers] = useState({})
 
+    useEffect(() => {
+        setTimeout(() => {
+            setbestSellers(item)
+        }, 1000);
+    }, [])
     return (
         <div className="vertical-card">
             <img src={jar} alt="jar" />
             <div className="bottom">
-                <h1>{item.title || <Skeleton />}</h1>
-                <span>{item.hint || <Skeleton />}</span>
-                <p>{item.description || <Skeleton count={3} />} </p>
-                <div className="add-to-cart">
-                    <span className="price">{item.price || <Skeleton />}</span>
-                    <PlusBtn id={item.id} />
-                </div>
+                <SkeletonTheme color="#fff" highlightColor="#96deda">
+                    <h1>{bestSellers.title || <Skeleton width={150} />}</h1>
+                    <span>{bestSellers.hint || <Skeleton width={150} />}</span>
+                    <p>{bestSellers.description || <Skeleton width={150} count={3} />} </p>
+                    <div className="add-to-cart">
+                        <span className="price">{bestSellers.price ? bestSellers.price + "$" : <Skeleton width={150} />}</span>
+                        <PlusBtn id={bestSellers.id} />
+                    </div>
+                </SkeletonTheme>
             </div>
         </div>
     )

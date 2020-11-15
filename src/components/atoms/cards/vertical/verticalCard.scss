@@ -1,2 +1,46 @@
 .vertical-card {
+  border-radius: 50px;
+  width: 45%;
+  background: linear-gradient(to bottom, #fff 6.19%, #96deda 95.6%);
+  position: relative;
+  padding-bottom: 180px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+  img {
+    border-radius: 50px;
+    max-width: 100%;
+  }
+  &:hover {
+    transform: scale(1.08);
+    .add-to-cart {
+      margin: 25px 0;
+    }
+  }
+  .bottom {
+    background: linear-gradient(313.37deg, #50c9c3 6.19%, #96deda 95.6%);
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px;
+    transition: all 0.3s;
+    text-align: left;
+    color: white;
+    p {
+      font-size: 14px;
+    }
+    h1 {
+      margin: 0;
+    }
+    .add-to-cart {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s;
+    }
+    .price {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  }
 }
