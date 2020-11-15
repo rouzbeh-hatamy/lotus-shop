@@ -1,5 +1,13 @@
 .index {
-  background-color: gray;
   min-height: 500px;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left-side {
+    display: flex;
+  }
+  .right-side {
+    border: 3px solid red;
+  }
 }

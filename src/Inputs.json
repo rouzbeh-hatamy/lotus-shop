@@ -1,0 +1,16 @@
+{
+    "bestSeller":[
+        {"id":1,
+        "title":"Lotus jar",
+        "hint":"Green fruit Jelly",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+        "price":"4.99"
+        },
+        {"id":2,
+        "title":"Lotus jar",
+        "hint":"Green fruit Jelly",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+        "price":"4.99"
+        }
+    ]
+}
