@@ -5,11 +5,19 @@ import VerticalCard from '../../atoms/cards/vertical/VerticalCard'
 import './indexStyle.scss'
 import MinusBtn from './../../atoms/buttons/Minus/MinusBtn';
 import HorizontalCard from '../../atoms/cards/horizontal/HorizontalCard'
+import Loading from '../../atoms/loading/Loading'
 function Index() {
+  const [ready, setready] = useState(false)
 
+  useEffect(() => {
+      setTimeout(() => {
+          setready(true)
+      }, 1200);
+  }, [])
   return (
     <Container classes={{ root: 'index' }}>
-      <Grid item xs={12} md={7} classes={{ root: 'left-side' }}>
+     {ready? <>
+     <Grid item xs={12} md={7} classes={{ root: 'left-side' }}>
         <div className="title">
           <h1>Best Seller</h1>
           <MinusBtn />
@@ -25,7 +33,7 @@ function Index() {
         <div className="items">
           {inputs.moreItems.map(item => <HorizontalCard key={item.id} item={item} />)}
         </div>
-      </Grid>
+      </Grid></>:<div className="loading-container"><Loading width={150}/></div>}
     </Container>
   )
 }

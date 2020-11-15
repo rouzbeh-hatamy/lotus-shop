@@ -44,4 +44,31 @@
       width: 70%;
     }
   }
+  .loading-container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and(max-width:992px){
+  .index{
+    flex-direction: column;
+    .left-side{
+      .items{
+        padding: 0;
+        flex-direction: column;
+        .vertical-card:last-child{
+          margin: 0;
+        }
+      }
+    }
+    .right-side{
+      .items{
+        width: 90%;
+      }
+    }
+  }
 }

@@ -8,6 +8,7 @@
     padding: 25px;
     position: relative;
     transition: all 0.3s;
+    background-color: #fff;
     &:hover{
         background: linear-gradient(44.39deg, #50C9C3 6.16%, #96DEDA 94.73%);
         transform: scale(1.08);
@@ -67,3 +68,10 @@
         bottom: 10px;
     }
 }
+@media screen and(max-width:992px){
+    .horizontal-card{
+        .info{
+            padding-right: 15%;
+        }
+    }
+  }
