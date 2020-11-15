@@ -21,7 +21,7 @@ function VerticalCard({ item }) {
                     <p>{bestSellers.description || <Skeleton width={150} count={3} />} </p>
                     <div className="add-to-cart">
                         <span className="price">{bestSellers.price ? bestSellers.price + "$" : <Skeleton width={150} />}</span>
-                        <PlusBtn id={bestSellers.id} />
+                        <PlusBtn id={bestSellers.id} width={"46px"} />
                     </div>
                 </SkeletonTheme>
             </div>

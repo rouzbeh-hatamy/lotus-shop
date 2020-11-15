@@ -23,7 +23,20 @@
     .cart {
       margin-left: 45px;
       font-size: 25px;
+      position: relative;
       color: #0b7171;
+      cursor: pointer;
+      .count{
+        color: #fff;
+        background-color: #0b7171;
+        border-radius: 50%;
+        font-size: 13px;
+        padding: 0px 5px;
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        bottom: 0;
+      }
     }
     .search {
       position: relative;
@@ -32,6 +45,7 @@
         right: 10px;
         top: 45%;
         transform: translateY(-50%);
+        cursor: pointer;
       }
       .input {
         label {

@@ -6,8 +6,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import bag from '../../../Assets/img/bag.png'
 import logo from '../../../Assets/img/logo.png'
+import { myContext } from '../../provider/LotusProvider'
 import './costumNav.scss'
 function CostumNavbar() {
+  const {  providerCartItems } = React.useContext(myContext);
+    const [cartItems, setcartItems] = providerCartItems
   return (
     <Container classes={{ root: 'navbar' }}>
       <Link to="/" className="logo">
@@ -21,6 +24,7 @@ function CostumNavbar() {
         </div>
         <div className="cart">
           <img src={bag} alt="cart  "/>
+          <div className="count"><span>{cartItems.length > 0 ? cartItems.length : '' }</span></div>
         </div>
       </div>
     </Container>

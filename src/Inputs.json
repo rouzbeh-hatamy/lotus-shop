@@ -1,16 +1,44 @@
 {
-    "bestSeller":[
-        {"id":1,
-        "title":"Lotus jar",
-        "hint":"Green fruit Jelly",
-        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
-        "price":"4.99"
-        },
-        {"id":2,
-        "title":"Lotus jar",
-        "hint":"Green fruit Jelly",
-        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
-        "price":"4.99"
-        }
-    ]
+  "bestSeller": [
+    {
+      "id": 1,
+      "title": "Lotus jar",
+      "hint": "Green fruit Jelly",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+      "price": "4.99"
+    },
+    {
+      "id": 2,
+      "title": "Lotus jar",
+      "hint": "Green fruit Jelly",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+      "price": "4.99"
+    }
+  ],
+  "moreItems": [
+    {
+      "id": 4,
+      "title": "Apple Fruit",
+      "hint": "Original taste",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+      "price": "4.99",
+      "img": "https://cdn.iconscout.com/icon/free/png-256/red-apple-fruit-emoj-symbol-food-30677.png"
+    },
+    {
+      "id": 5,
+      "title": "Mango",
+      "hint": "Original taste",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+      "price": "4.99",
+      "img": "https://lh3.googleusercontent.com/proxy/ZDxT5mzoeeDg642yGQbg8ZSg1s1fs16xErpZHtbghdgdyEYDBv-GpnkkxVW__MzUFIpoL7X2lCiBv126AZLH6-enp3e6J8B6Lh5SSaWQ5QU"
+    },
+    {
+      "id": 6,
+      "title": "Mix Fruits",
+      "hint": "Original taste",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum necessitatibus quo, animi delectus doloribus modi voluptas dolorum sit velit eligendi deserunt fugit amet qui, eos iste, magni natus quibusdam",
+      "price": "4.99",
+      "img": "https://freepngimg.com/thumb/fruit/3-2-fruit-picture-thumb.png"
+    }
+  ]
 }

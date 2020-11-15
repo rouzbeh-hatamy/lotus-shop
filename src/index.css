@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Futura;
+  font-family: Futura !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -8,4 +8,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@font-face {
+  font-family: Futura;
+  src: url("./Assets/fonts/FuturaBook.ttf");
 }

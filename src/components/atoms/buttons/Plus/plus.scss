@@ -1,6 +1,4 @@
 .plus-btn {
-  width: 46px;
-  height: 46px;
   border-radius: 50%;
   background: #23a0a5;
   color: white;
@@ -9,4 +7,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.1s;
+  &:active{
+    transform: scale(1.1);
+    background-color: #fff;
+    svg{
+      color: #23a0a5;
+    }
+  }
 }

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './Assets/fonts/Futur.css'
+import './Assets/fonts/futur.ttf'
 ReactDOM.render(
   <React.StrictMode>
     <App />
