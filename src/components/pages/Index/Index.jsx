@@ -1,9 +1,8 @@
 import React from 'react'
-
+import CostumNavbar from '../../atoms/nav/CostumNavbar'
 function Index() {
     return (
-        <div>
-            <h1>h1</h1>
+        <div className="index">
         </div>
     )
 }

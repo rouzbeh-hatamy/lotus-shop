@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image: url("./Assets/img/Rectangle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .App-logo {
