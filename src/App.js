@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
+import LotusProvider from './components/provider/LotusProvider'
 function App() {
   return (
+    <LotusProvider>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +20,7 @@ function App() {
         </a>
       </header>
     </div>
+    </LotusProvider>
   );
 }
 
