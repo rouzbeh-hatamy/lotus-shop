@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## LOTUS online-shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has deployed on Vercel => [LOTUS](https://lotus-shop.vercel.app/).
 
 ## Available Scripts
 
